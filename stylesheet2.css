@@ -1,0 +1,139 @@
+/* ーーーーーーーーーーーーー以下スマホ対応CSSーーーーーーーーーーーーーーーーーーーーーー */
+
+
+@media screen and (max-width: 768px) {
+
+    .pc-nav {
+        display: none;
+    }
+    
+    .explain br {
+        display: none;
+      }
+
+    * {
+        padding: 0;
+        margin: 0;
+        
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    a:visited{
+        color: inherit;
+      }
+
+    body {
+        background-size: cover;
+        background-image: url(toptop11.jpg);
+    }
+    
+    /* ---------------------------------------------------- */
+    /* ヘッダー部分 */
+    header {
+        height: 100%;
+    }
+
+    .page-header {
+        padding-top: 30px;
+        font-size: 5.5vw;
+        /* font-family: 'Philosopher',serif; */
+        font-family: "Arial Black";
+        color: white;
+        text-align: center;
+        letter-spacing: 3px;
+        line-height: 1.2;
+        opacity: .9;
+
+    }
+    
+    /* ------------------------------------------------------------ */
+    /* 説明 */
+    article {
+        font-size: 4.3vw;
+        padding-top: 10px;
+        line-height: 1.6;
+        font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+        text-indent: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        color: black;
+        opacity: 0.7;
+       
+    }
+    .br::before {
+        content: "\A" ;
+        white-space: pre ;
+    }
+    /* ------------------------------------------------------------ */
+    /* メインボックス */
+    
+    .box-wrapper {
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        margin-top: 0px;
+        padding-bottom: 200px;
+        width:100%;
+    }
+    
+    .box {
+        box-sizing: border-box;
+        text-align: center;
+        margin-top: 17px;
+    }
+
+    
+    .box img {
+        height: 12vw;
+        width: 14vw;
+        border-radius: 50px;
+    }
+    
+    .box h2  {
+        font-size: 6.5vw;
+        line-height: 0.5;
+        /* font-family: 'Philosopher',serif;  */
+        font-family: "Arial Black";
+        color: black;
+    }
+    
+    .box p  {
+        font-size: 4vw;
+        color: white;
+        font-weight: bold;
+        font-family: 'Philosopher',serif;
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    /* <!-- ---------------------------------------------------------------------- --> */
+    
+    .page-footer {
+        background-color: #000;
+        opacity: .6;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 35px;
+    }
+    
+    .footer-list {
+        display: flex;
+        opacity: 1;
+        justify-content: center;
+        list-style: none;
+        padding-top: 2px;
+    }
+    
+    .footer-list a {
+        margin: 8px;
+        font-size: 3.5vw;
+        color: white;
+    }
+    
+    .footer-list a:hover {
+        color: aqua;
+    }
+
+}
